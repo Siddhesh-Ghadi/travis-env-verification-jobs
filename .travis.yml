@@ -27,3 +27,11 @@ jobs:
     - name: "Bionic Test"
       dist: bionic
       script: bash ./tests/rm-rf-test.sh  
+
+    - stage: Docker Run Test
+      name: "Xenial Test"
+      dist: xenial
+      script: bash ./tests/docker-run-test.sh
+    - name: "Bionic Test"
+      dist: bionic
+      script: bash ./tests/docker-run-test.sh 
